@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="page">
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="blog.html" style="display: block; margin-bottom: 20px;">
+            Блог
+        </a>
+        <a href="blog-item.html" style="display: block; margin-bottom: 20px;">
+            Блог 2
+        </a>
+        <a href="404.html" style="display: block; margin-bottom: 20px;">
+            404
+        </a>
+        <a href="success.html" style="display: block; margin-bottom: 20px;">
+            Оплата прошла успешно!
+        </a>
+        <a href="error.html" style="display: block; margin-bottom: 20px;">
+            Ошибка оплаты
+        </a>
+        <a href="conf.html" style="display: block; margin-bottom: 20px;">
+            Политика конфиденциальности
+        </a>
+        <a href="login.html" style="display: block; margin-bottom: 20px;">
+            Как узнать логин:
+        </a>
+        <a href="rules.html" style="display: block; margin-bottom: 20px;">
+            Правила возврата
+        </a>
+        <a href="yoomoney.html" style="display: block; margin-bottom: 20px;">
+            Завершить оплату через Yoomoney
+        </a>
+
+
+
+
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="successModal">
+            Форма успешно отправлена
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="loginModal">
+            Как узнать логин:
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="payModal">
+            Инструкция по оплате YooMoney
+        </button>
+
+    </div>
+
+    <div class="modal" id="successModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.3971 17.0538L16.4697 16.9697C16.7359 16.7034 17.1526 16.6792 17.4462 16.8971L17.5303 16.9697L24 23.439L30.4697 16.9697C30.7626 16.6768 31.2374 16.6768 31.5303 16.9697C31.8232 17.2626 31.8232 17.7374 31.5303 18.0303L25.061 24.5L31.5303 30.9697C31.7966 31.2359 31.8208 31.6526 31.6029 31.9462L31.5303 32.0303C31.2641 32.2966 30.8474 32.3208 30.5538 32.1029L30.4697 32.0303L24 25.561L17.5303 32.0303C17.2374 32.3232 16.7626 32.3232 16.4697 32.0303C16.1768 31.7374 16.1768 31.2626 16.4697 30.9697L22.939 24.5L16.4697 18.0303C16.2034 17.7641 16.1792 17.3474 16.3971 17.0538L16.4697 16.9697L16.3971 17.0538Z" fill="#14142B" />
+                </svg>
+            </button>
+            <div class="success__inner">
+                <img src="img/check3.svg" alt="" class="success__check">
+                <div class="text45 bold-text">
+                    Форма успешно отправлена
+                </div>
+                <div class="text20 dark-text">
+                    Сейчас вы будете переотправлены на страницу оплаты
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal login-modal modal2" id="loginModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.07422 2.36792L14.4253 14.719M14.4253 2.36792L2.07422 14.719" stroke="#FF6A9F " stroke-width="3" stroke-linecap="round" />
+                </svg>
+            </button>
+            <div class="modal__scroll">
+                <div class="text45 mob-text25 bold-text">
+                    Как узнать логин:
+                </div>
+                <img class="login-modal__img" src="img/login.webp" alt="">
+                <div class="text">
+                    <p>Чтобы узнать логин, страну и валюту аккаунта Steam, нажмите на имя профиля Steam в правом верхнем углу и выберите «Об аккаунте».</p>
+                    <p>Проверить с помощью браузера (необходимо авторизоваться).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal pay-modal modal2" id="payModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.07422 2.36792L14.4253 14.719M14.4253 2.36792L2.07422 14.719" stroke="#FF6A9F" stroke-width="3" stroke-linecap="round" />
+                </svg>
+            </button>
+            <div class="modal__scroll">
+                <div class="text45 mob-text25 bold-text">
+                    Инструкция по оплате YooMoney
+                </div>
+                <div class="text">
+                    <p>
+                        Для того, чтобы произвести оплату через YooMoney, вам необходимо сделать перевод на указанную сумму на логин
+                        <a href="">steamteamservice</a>
+                    </p>
+                </div>
+                <img class="login-modal__img" src="img/pay.webp" alt="">
+                <div class="text">
+                    <p>Чтобы узнать логин, страну и валюту аккаунта Steam, нажмите на имя профиля Steam в правом верхнем углу и выберите «Об аккаунте».</p>
+                    <p>Проверить с помощью браузера (необходимо авторизоваться).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  -->
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
